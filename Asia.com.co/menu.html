@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/logoasiablanconavbar1.png" type="image/x-icon">
+    <title> Restaurante Asia </title>
+    <!-- font awesome cdn link  -->
+    <meta name="descripcion" content="Restaurante Asia palmas medellín">
+    <meta name="keywords" content="chop Suey, arroz chino, lumpias,comida asiatica,china,mandarin,food,comida, el poblado">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript">
+
+    var arrLang = new Array();
+    
+    arrLang['en'] = new Array();
+
+    arrLang['es'] = new Array();
+
+    arrLang['zh'] = new Array();
+
+    // English lenguage
+    arrLang['en']['pr00'] ='Appetizer';
+    arrLang['en']['pr01'] = 'Egg Roll';
+    arrLang['en']['pr02'] = 'Barbecue Spareribs';
+    arrLang['en']['pr03'] = 'Fried Wonton';
+    arrLang['en']['pr04'] = 'Prawn Cocktail';
+    arrLang['en']['pr05'] = 'Shrimp Cocktail';
+    arrLang['en']['pr06'] = 'Papo Platter';
+    arrLang['en']['pr07'] = 'Quail Eggs Cocktail';
+
+    arrLang['en']['pr011'] = 'Soup';
+    arrLang['en']['pr11'] = 'Hot and Sour Soup';
+    arrLang['en']['pr12'] = 'Won ton Soup';
+    arrLang['en']['pr13'] = 'Won ton Noodle Soup';
+    arrLang['en']['pr14'] = 'Yat ko Mien Soup';
+
+    arrLang['en']['pr022'] = 'Cream';
+    arrLang['en']['pr21'] = 'Prawn Cream';
+    arrLang['en']['pr22'] = 'Shrimp Cream';
+    arrLang['en']['pr23'] = 'Chicken Cream';
+    arrLang['en']['pr24'] = 'Fish Cream';
+    arrLang['en']['pr25'] = 'Mushroom Cream';
+    arrLang['en']['pr26'] = 'Onion Cream';
+    arrLang['en']['pr27'] = 'Tomato Cream';
+    arrLang['en']['pr28'] = 'Brocoli Cream';
+
+    arrLang['en']['pr033'] ='Specialty Dish';
+    arrLang['en']['pr31'] = 'Chicken with Orange Sauce';
+    arrLang['en']['pr32'] = 'Pineapple Chicken';
+    arrLang['en']['pr33'] = 'Chaw Pat Chin';
+    arrLang['en']['pr34'] = 'Beef in Bed of Brocoli';
+    arrLang['en']['pr35'] = 'Chicken in Bed of Brocoli';
+    arrLang['en']['pr36'] = 'Prawn in Bed of Brocoli';
+    arrLang['en']['pr37'] = 'Chicken with Sesame in Seafood Sauce';
+    arrLang['en']['pr38'] = 'Chicken with baby Corns and Greens';
+    arrLang['en']['pr39'] = 'Beef with baby Corns and Greens';
+    arrLang['en']['pr310'] = 'Beef with Ginger in Oyster Sauce';
+    arrLang['en']['pr311'] = 'Shrimp with Garlic Steamed Potatoes';
+    arrLang['en']['pr312'] = 'Bacon with Jalapenos';
+
+     arrLang['en']['pr044'] = 'Fried Rice';
+    arrLang['en']['pr41'] = 'Chicken Fried Rice';
+    arrLang['en']['pr42'] = 'Beef Fried Rice';
+    arrLang['en']['pr43'] = 'Prawn Fried Rice  ';
+    arrLang['en']['pr44'] = 'Seafood Fried Rice ';
+    arrLang['en']['pr45'] = 'Shrimp Fried Rice ';
+    arrLang['en']['pr46'] = 'Eight Delight Fried Rice ';
+    arrLang['en']['pr47'] = 'House Fried Rice ';
+    arrLang['en']['pr48'] = 'House Fried Rice 1/2 Portion';
+    arrLang['en']['pr49'] = 'House Fried Rice 1/2 Portion + Shrimp';
+
+
+  arrLang['en']['pr055'] ='Sweet and Sour';
+    arrLang['en']['pr51'] = 'Sweet and Sour Chicken';
+    arrLang['en']['pr52'] = 'Sweet and Sour Ribs';
+    arrLang['en']['pr53'] = 'Sweet and Sour Prawn';
+    arrLang['en']['pr54'] = 'Sweet and Sour Fish';
+    arrLang['en']['pr55'] = 'Sweet and Sour Pork';
+    arrLang['en']['pr56'] = 'Sweet and Sour Pork 1/2 Portion';
+    arrLang['en']['pr57'] = 'Sweet and Sour Pollo 1/2 Portion';
+
+
+    arrLang['en']['pr066'] ='Curry Dish';
+    arrLang['en']['pr61'] = 'Curry Chicken';
+    arrLang['en']['pr62'] = 'Curry Prawn';
+    arrLang['en']['pr63'] = 'Curry Fish';
+    arrLang['en']['pr64'] = 'Curry Shrimp';
+
+
+    arrLang['en']['pr077'] ='Oyster Sauce with Bean Sprouts';
+    arrLang['en']['pr71'] = 'Chicken with Bean Sprouts in Oyster Sauce';
+    arrLang['en']['pr72'] = 'Pork with Bean Sprouts in Oyster Sauce';
+    arrLang['en']['pr73'] = 'Beef with Bean Sprouts in Oyster Sauce';
+    arrLang['en']['pr74'] = 'Prawn with Bean Sprouts in Oyster Sauce';
+    arrLang['en']['pr75'] = 'Fish with Bean Sprouts in Oyster Sauce';
+    arrLang['en']['pr76'] = 'Shrimp with Bean Sprouts in Oyster Sauce';
+
+
+arrLang['en']['pr088'] ='Chop Suey';
+    arrLang['en']['pr81'] = 'Chicken Chop Suey';
+    arrLang['en']['pr82'] = 'Beef Chop Suey';
+    arrLang['en']['pr83'] = 'Prawn Chop Suey';
+    arrLang['en']['pr84'] = 'Shrimp Chop Suey';
+    arrLang['en']['pr85'] = 'Seafood Chop Suey';
+    arrLang['en']['pr86'] = 'House Chop Suey';
+    arrLang['en']['pr87'] = 'House Chop Suey 1/2 Portion';
+
+
+arrLang['en']['pr099'] ='Chaw Mien';
+    arrLang['en']['pr91'] = 'Chicken Chaw Mien';
+    arrLang['en']['pr92'] = 'Beef Chaw Mien';
+    arrLang['en']['pr93'] = 'Prawn Chaw Mien';
+    arrLang['en']['pr94'] = 'Shrimp Chaw Mien';
+    arrLang['en']['pr95'] = 'Seafood Chaw Mien';
+    arrLang['en']['pr96'] = 'House Chaw Mien';
+    arrLang['en']['pr97'] = 'House Chaw Mien 1/2 Portion';
+
+    arrLang['en']['pr0100'] ='Vegetarian Plate';
+    arrLang['en']['pr101'] = 'Lo Mien with Sour Sauce';
+    arrLang['en']['pr102'] = 'Fried Rice with Beans Sprouts and Eggs in Soya Sauce';
+    arrLang['en']['pr103'] = 'Vegetables in Soya Sauce';
+    arrLang['en']['pr104'] = 'ToFu in Sweet Sour Sauce';
+
+    arrLang['en']['pr0200'] ='Seafood';
+    arrLang['en']['pr41'] = 'Butterfly Prawn';
+    arrLang['en']['pr42'] = 'Fried Prawn';
+    arrLang['en']['pr43'] = 'Garlic Prawn';
+    arrLang['en']['pr44'] = 'Seafood Pot';
+    arrLang['en']['pr45'] = 'Fish with Vegetable in Soya Sauce';
+    arrLang['en']['pr46'] = 'Fried Filet Sea Bass';
+
+    arrLang['en']['pr0300'] ='Lo Mien';
+    arrLang['en']['pr41'] = 'Beef Lo Mien';
+    arrLang['en']['pr42'] = 'Chicken Lo Mien';
+    arrLang['en']['pr43'] = 'Prawn Lo Mien';
+
+    arrLang['en']['pr0400'] ='Combination Plate';
+    arrLang['en']['pr401'] = 'Chop Suey and House Fried Rice';
+    arrLang['en']['pr402'] = 'Chop Suey and Sweet Sour Chicken';
+    arrLang['en']['pr403'] = 'House Fried Rice and Sweet Sour Pork';
+    arrLang['en']['pr404'] = 'House Fried Rice and Sweet Sour Chicken';
+
+    arrLang['en']['pr0500'] ='Triple Combination Plate';
+    arrLang['en']['pr501'] = 'House Fried Rice and Chop Suey and Sweet Sour Pork';
+    arrLang['en']['pr42'] = 'House Fried Rice and Chop Suey and Sweet Sour Chicken';
+
+    arrLang['en']['pr0600'] ='Combination Plate 1/2 Portion';
+    arrLang['en']['pr601'] = 'Chop Suey and House Fried Rice';
+    arrLang['en']['pr602'] = 'Chop Suey and Sweet Sour Chicken';
+    arrLang['en']['pr603'] = 'House Fried Rice and Sweet Sour Pork';
+    arrLang['en']['pr604'] = 'House Fried Rice and Sweet Sour Chicken';
+
+    arrLang['en']['pr0700'] ='ToFu';
+    arrLang['en']['pr701'] = 'ToFu with Chicken';
+    arrLang['en']['pr702'] = 'ToFu with Beef';
+    arrLang['en']['pr703'] = 'ToFu with Prawn';
+    arrLang['en']['pr704'] = 'Mapo To Fu';
+
+    arrLang['en']['pr0800'] ='Meat';
+    arrLang['en']['pr801'] = 'Fried  Chicken';
+    arrLang['en']['pr802'] = 'Deef Fried Chicken Chop';
+    arrLang['en']['pr803'] = 'Beef with Pepper in Soya Sauce';
+    arrLang['en']['pr804'] = 'Baby Beef with Vegetables in Wine Sauce';
+    arrLang['en']['pr805'] = 'Beef Steak';
+    arrLang['en']['pr806'] = 'Pork Chop';
+    arrLang['en']['pr807'] = 'Deef Fried Pork Chop';
+    arrLang['en']['pr808'] = 'Filet Mignon with Mushroom Sauce';
+    arrLang['en']['pr809'] = 'Stream Rice';
+
+    arrLang['en']['pr0900'] ='Soda';
+    arrLang['en']['pr901'] = 'Coca-Cola';
+    arrLang['en']['pr902'] = 'Coca-Cola zero';
+    arrLang['en']['pr903'] = 'Manzana';
+    arrLang['en']['pr904'] = 'Naranjada';
+    arrLang['en']['pr905'] = '7up';
+    arrLang['en']['pr906'] = 'Premio';
+    arrLang['en']['pr907'] = 'Soda';
+    arrLang['en']['pr908'] = 'Cuatro';
+    arrLang['en']['pr909'] = 'Colombiana';
+
+    arrLang['en']['pr1011'] ='Healthy Soda';
+    arrLang['en']['pr1012'] = 'Soda of Lichys';
+    arrLang['en']['pr1013'] = 'Soda  of Watermelon';
+    arrLang['en']['pr1014'] = 'Soda of Passion Fruit';
+    arrLang['en']['pr1015'] = 'Soda Michelada';
+
+    arrLang['en']['pr1022'] ='Sangrias';
+    arrLang['en']['pr1023'] = 'Glass of Sangria Tinto';
+    arrLang['en']['pr1024'] = 'Glass of Sangria Rosse';
+    arrLang['en']['pr1025'] = 'Glass of Sangria Blanc';
+    arrLang['en']['pr1026'] = 'Jug of Sangria Tinto';
+    arrLang['en']['pr1027'] = 'Jug of Sangria Rosse';
+    arrLang['en']['pr1028'] = 'Jug of Sangria Blanc';
+
+    arrLang['en']['pr1033'] ='Juices';
+    arrLang['en']['pr1034'] = 'Mango';
+    arrLang['en']['pr1035'] = 'Soursop';
+    arrLang['en']['pr1036'] = 'Blackberry';
+    arrLang['en']['pr1037'] = 'Passion Fruit';
+    arrLang['en']['pr1038'] = 'Coconut Lemonade';
+    arrLang['en']['pr1039'] = 'Lemonade';
+
+    arrLang['en']['pr1044'] ='Desserts';
+    arrLang['en']['pr1045'] = 'Flan with Coconut';
+    arrLang['en']['pr1046'] = 'Caramel Flan';
+    arrLang['en']['pr1047'] = 'Cheesecake';
+    arrLang['en']['pr1048'] = 'Nata';
+    arrLang['en']['pr1049'] = 'Tapioca with Mango';
+
+    arrLang['es']['pr00'] = 'Entradas';
+    arrLang['es']['pr01'] = 'Lumpia';
+    arrLang['es']['pr02'] = 'Costilla Asada';
+    arrLang['es']['pr03'] = 'Wan Tun Frito (Hojuela)';
+    arrLang['es']['pr04'] = 'Copa de Langostino';
+    arrLang['es']['pr05'] = 'Copa de Camarones';
+    arrLang['es']['pr06'] = 'Combinación de la Casa';
+    arrLang['es']['pr07'] = 'Copa de Huevos de Codorniz';
+
+    arrLang['es']['pr11'] = 'Sopas';
+    arrLang['es']['pr12'] = 'Hot and Sour';
+    arrLang['es']['pr13'] = 'Wan Tun';
+    arrLang['es']['pr14'] = 'Wan Tun Mien';
+    arrLang['es']['pr15'] = 'Yat Ko Mien';
+
+    arrLang['es']['pr022'] ='Cremas';
+    arrLang['es']['pr21'] = 'Crema de Langostino';
+    arrLang['es']['pr22'] = 'crema de Camarones';
+    arrLang['es']['pr23'] = 'Crema de Pollo';
+    arrLang['es']['pr24'] = 'Crema de Pescado';
+    arrLang['es']['pr25'] = 'crema de Champiñones';
+    arrLang['es']['pr26'] = 'Crema de Cebolla';
+    arrLang['es']['pr27'] = 'Crema de Tomate';
+    
+    arrLang['es']['pr033'] = 'Platos Especiales';
+    arrLang['es']['pr31'] = 'Pollo en Salsa de Naranja';
+    arrLang['es']['pr32'] = 'Pollo Piña';
+    arrLang['es']['pr33'] = 'Chaw Pat Chin';
+    arrLang['es']['pr34'] = 'Res en Cama de Brócoli';
+    arrLang['es']['pr35'] = 'Pollo en Cama de Brócoli';
+    arrLang['es']['pr36'] = 'Langostino en Cama de Brócoli';
+    arrLang['es']['pr37'] = 'Pollo en Salsa de Soya';
+    arrLang['es']['pr38'] = 'Pollo en Mazorquitas';
+    arrLang['es']['pr39'] = 'Res en Mazorquitas';
+    arrLang['es']['pr310'] = 'Res Jengibre en Salsa de Ostras';
+    arrLang['es']['pr311'] = 'Camarones al Ajillo';
+    arrLang['es']['pr312'] = 'Tocino Jalapeños';
+
+    arrLang['es']['pr044'] = 'Arroz Frito';
+    arrLang['es']['pr41'] = 'Arroz con Pollo';
+    arrLang['es']['pr42'] = 'Arroz con Res';
+    arrLang['es']['pr43'] = 'Arroz con Langostinos';
+    arrLang['es']['pr44'] = 'Arroz con Mariscos ';
+    arrLang['es']['pr45'] = 'Arroz con Camarones';
+    arrLang['es']['pr46'] = 'Arroz Ocho Sabores  ';
+    arrLang['es']['pr47'] = 'Arroz Especial ';
+    arrLang['es']['pr48'] = 'Arroz Especial Pequeño';
+    arrLang['es']['pr49'] = 'Arroz Especial Pequeño + Camarón';
+
+    arrLang['es']['pr055'] ='Salsa Agridulce';
+    arrLang['es']['pr51'] = 'Pollo en Salsa Agridulce';
+    arrLang['es']['pr52'] = 'Costilla en Salsa Agridulce';
+    arrLang['es']['pr53'] = 'Langostino en Salsa Agridulce';
+    arrLang['es']['pr54'] = 'Pescado en Salsa Agridulce';
+    arrLang['es']['pr55'] = 'Cerdo en Salsa Agridulce';
+    arrLang['es']['pr56'] = 'Cerdo en Salsa Agridulce Pequeño';
+    arrLang['es']['pr57'] = 'Pollo en Salsa Agridulce Pequeño';
+
+    arrLang['es']['pr066'] ='Salsa de Curry';
+    arrLang['es']['pr61'] = 'Pollo Curry';
+    arrLang['es']['pr62'] = 'Langostinno Curry';
+    arrLang['es']['pr63'] = 'Pescado Curry';
+    arrLang['es']['pr64'] = 'Camaron Curry'
+
+    arrLang['es']['pr077'] ='Salsa de Ostras';
+    arrLang['es']['pr71'] = 'Pollo en Salsa de Ostras';
+    arrLang['es']['pr72'] = 'Cerdo en Salsa de Ostras';
+    arrLang['es']['pr73'] = 'Res en Salsa de Ostras';
+    arrLang['es']['pr74'] = 'Langostino en Salsa de Ostras';
+    arrLang['es']['pr75'] = 'Pescado en Salsa de Ostras';
+    arrLang['es']['pr76'] = 'Camarones en Salsa de Ostras';
+
+    arrLang['es']['pr088'] ='Chop Suey';
+    arrLang['es']['pr81'] = 'Chop Suey con Pollo';
+    arrLang['es']['pr82'] = 'Chop Suey con Res';
+    arrLang['es']['pr83'] = 'Chop Suey con Langostino';
+    arrLang['es']['pr84'] = 'Chop Suey con Camarones';
+    arrLang['es']['pr85'] = 'Chop Suey con Mariscos';
+    arrLang['es']['pr86'] = 'Chop Suey Especial';
+    arrLang['es']['pr87'] = 'Chop Suey Especial Pequeño';
+    arrLang['es']['pr88'] = 'Chop Suey Especial Pequeño + Camarón';
+  
+   arrLang['es']['pr099'] ='Chaw Mien';
+    arrLang['es']['pr91'] = 'Chaw Mien con Pollo';
+    arrLang['es']['pr92'] = 'Chaw Mien con Res';
+    arrLang['es']['pr93'] = 'Chaw Mien con Langostino';
+    arrLang['es']['pr94'] = 'Chaw Mien con Camarones';
+    arrLang['es']['pr95'] = 'Chaw Mien con Mariscos';
+    arrLang['es']['pr96'] = 'Chaw Mien Especial';
+    arrLang['es']['pr97'] = 'Chaw Mien Especial Pequeño';
+    arrLang['es']['pr98'] = 'Chaw Mien Especial Pequeño + Camarón';
+
+    arrLang['es']['pr0100'] ='Plato Vegetariano';
+    arrLang['es']['pr101'] = 'Lo Mien sin Carne';
+    arrLang['es']['pr102'] = 'Arroz sin Carne';
+    arrLang['es']['pr103'] = 'Vegetales en Salsa de Soya';
+    arrLang['es']['pr104'] = 'To fu en Salsa Agridulce';
+
+    arrLang['es']['pr0200'] ='Mariscos';
+    arrLang['es']['pr201'] = 'Langostinos Mariscos';
+    arrLang['es']['pr202'] = 'Langostinos a la Plancha';
+    arrLang['es']['pr203'] = 'Langostinos Ajillo';
+    arrLang['es']['pr204'] = 'Cazuela de Mariscos';
+    arrLang['es']['pr205'] = 'Pescado con Vegetales en salsa Soya';
+    arrLang['es']['pr206'] = 'Pescado a la Milanesa o a la Plancha';
+
+    arrLang['es']['pr0300'] ='Lo Mien';
+    arrLang['es']['pr301'] = 'Lo Mien Res';
+    arrLang['es']['pr302'] = 'Lo Mien Pollo';
+    arrLang['es']['pr303'] = 'Lo Mien Langostino';
+
+    arrLang['es']['pr0400'] ='Plato Combinado';
+    arrLang['es']['pr401'] = 'Chop Suey y Arroz Frito';
+    arrLang['es']['pr402'] = 'Chop Suey y Salsa Agridulce';
+    arrLang['es']['pr403'] = 'Arroz Frito y Cerdo Agridulce';
+    arrLang['es']['pr404'] = 'Arroz Frito y Pollo Agridulce';
+
+    arrLang['es']['pr0500'] ='Combinado Triple';
+    arrLang['es']['pr501'] = 'Arroz Frito EspeciaL Chop Suey y Cerdo en Salsa Agridulce';
+    arrLang['es']['pr502'] = 'Arroz Frito EspeciaL Chop Suey y Pollo en Salsa Agridulce';
+
+    arrLang['es']['pr0600'] ='Plato Combinado Pequeño';
+    arrLang['es']['pr601'] = 'Chop Suey y Arroz Frito';
+    arrLang['es']['pr602'] = 'Chop Suey y Pollo en Salsa Agridulce';
+    arrLang['es']['pr603'] = 'Arroz Frito Especial y Cerdo en Salsa Agridulce';
+    arrLang['es']['pr604'] = 'Arroz Frito Especial y Pollo en Salsa Agridulce';
+
+    arrLang['es']['pr0700'] ='ToFu';
+    arrLang['es']['pr701'] = 'ToFu con Pollo';
+    arrLang['es']['pr702'] = 'ToFu con Res';
+    arrLang['es']['pr703'] = 'ToFu con Langostinos';
+    arrLang['es']['pr704'] = 'Mapo ToFu';
+
+
+    arrLang['es']['pr0800'] ='Carnes';
+    arrLang['es']['pr801'] = 'Pollo a la Plancha o a la Milanesa ';
+    arrLang['es']['pr802'] = 'Res con Pimenton';
+    arrLang['es']['pr803'] = 'Res con Vegetales en Salsa de Vino';
+    arrLang['es']['pr804'] = 'Res Asada';
+    arrLang['es']['pr805'] = 'Cerdo Plancha';
+    arrLang['es']['pr806'] = 'Cerdo Milanesa';
+    arrLang['es']['pr807'] = 'Filet Mignon';
+    arrLang['es']['pr808'] = 'Arroz Blanco';
+
+    arrLang['es']['pr0900'] ='Soda';
+    arrLang['es']['pr901'] = 'Coca-Cola';
+    arrLang['es']['pr902'] = 'Coca-Cola zero';
+    arrLang['es']['pr903'] = 'Manzana';
+    arrLang['es']['pr904'] = 'Naranjada';
+    arrLang['es']['pr905'] = '7up';
+    arrLang['es']['pr906'] = 'Premio';
+    arrLang['es']['pr907'] = 'Soda';
+    arrLang['es']['pr908'] = 'Cuatro';
+    arrLang['es']['pr909'] = 'Colombiana';
+
+    arrLang['es']['pr1011'] ='Soda';
+    arrLang['es']['pr1012'] = 'Soda de Lichys';
+    arrLang['es']['pr1013'] = 'Soda de Sandia';
+    arrLang['es']['pr1014'] = 'Soda de Maracuya';
+    arrLang['es']['pr1015'] = 'Soda Michelada';
+
+
+    arrLang['es']['pr1022'] ='Sangrias';
+    arrLang['es']['pr1023'] = 'Copa de Sangria Tinto';
+    arrLang['es']['pr1024'] = 'Copa de Sangria Rosse';
+    arrLang['es']['pr1025'] = 'Copa de Sangria Blanc';
+    arrLang['es']['pr1026'] = 'Jarra de Sangria Tinto';
+    arrLang['es']['pr1027'] = 'Jarra de Sangria Rosse';
+    arrLang['es']['pr1028'] = 'Jarra de Sangria Blanc';
+   
+
+      arrLang['es']['pr1033'] ='Juices';
+    arrLang['es']['pr1034'] = 'Mango';
+    arrLang['es']['pr1035'] = 'Guanabana';
+    arrLang['es']['pr1036'] = 'Mora';
+    arrLang['es']['pr1037'] = 'Maracuya';
+    arrLang['es']['pr1038'] = 'Limonada de Coco';
+    arrLang['es']['pr1039'] = 'Limonada';
+   
+      arrLang['es']['pr1044'] ='Desserts';
+    arrLang['es']['pr1045'] = 'Flan con Coco';
+    arrLang['es']['pr1046'] = 'Flan de Caramelo';
+    arrLang['es']['pr1047'] = 'Cheese Cake';
+    arrLang['es']['pr1048'] = 'Nata';
+    arrLang['es']['pr1049'] = 'Te de China';
+    arrLang['es']['pr1050'] = 'Tapioca con Mango';
+
+
+    // Process translation
+
+    $(function() {
+
+      $('.translate').click(function() {
+
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function(index, item) {
+
+          $(this).text(arrLang[lang][$(this).attr('key')]);
+
+        });
+
+      });
+
+    });
+
+  </script>
+</head>
+<body>
+
+
+<!-- header section starts  -->
+<header class="header">
+<a href="#" class="logo">
+<img src="images/logoasiablanconavbar1.png" alt="asia">
+</a>
+<div class="icons">
+<div class="fas fa-bars" id="menu-btn"></div>
+</div>
+<nav class="navbar">
+<a href="/index.html" class="aa">Home</a>
+<a href="#" class="aa">Menú</a>
+<a href="/chino.html" class="aa">欢迎光临</a>
+<a href="/contacto.html" class="aa">Contacto</a>
+<a href="https://wa.link/jtr7yo" target="_blank" class="btn-bran1  fab fa-whatsapp">&nbsp&nbspWhatsApp</a>
+</nav>
+</header>
+<section>
+  <div class="space_into_universe"></div>
+  </section>
+<section>
+  <div class="space_into_universe"></div>
+</section>
+<section>
+  <div class="space_into_universe"></div>
+</section>
+<div class="Carousel">
+  <h2>Menú</h2>
+  <div class="slick-list" id="slick-list">
+      <button class="slick-arrow slick-prev" id="button-prev" data-button="button-prev" onclick="app.processingButton(event)">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"></path></svg>
+      </button>
+      <div class="slick-track" id="track">
+          <div class="slick">
+              <div>
+                  <a>
+                      <h4><small></small>Res Picante</h4>
+                      <picture>
+                        <img src="./images/1.png" alt="Image">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+          <div class="slick">
+              <div>
+                  <a>
+                      <h4><small></small>Res con Brócoli</h4>
+                      <picture>
+                          <img src="./images/2.png" alt="Image">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+          <div class="slick">
+              <div>
+                  <a>
+                      <h4><small>con Cascara</small>Langostino Aliños</h4>
+                      <picture>
+                          <img src="./images/3.png" alt="Image">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+          <div class="slick">
+              <div>
+                  <a>
+                      <h4><small>Pollo Jamon y Cerdo</small>Platos Especiales</h4>
+                      <picture>
+                          <img src="./images/4.png" alt="Image">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+          <div class="slick">
+              <div>
+                  <a>
+                      <h4><small>Plato Picante</small>Tocino Jalapeños</h4>
+                      <picture>
+                          <img src="./images/5.png" alt="Image">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+          <div class="slick">
+              <div>
+                  <a>
+                      <h4><small>Postre Chino</small>Tapica</h4>
+                      <picture>
+                          <img src="./images/6.png" alt="Image">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+          <div class="slick">
+              <div>
+                  <a>
+                      <h4><small>18.000 $</small>Salsa Soya "Original"</h4>
+                      <picture>
+                          <img src="./images/7.png" alt="Image">
+                      </picture>
+                  </a>
+              </div>
+          </div>
+      </div>
+      <button class="slick-arrow slick-next" id="button-next" data-button="button-next" onclick="app.processingButton(event)">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+      </button>
+  </div>
+</div>
+<script defer src="js/maincarrusel.js"></script>
+<main>
+  <section class="Mnú">
+  <div class="bottonp">
+<h3>Elige tu idioma preferido para ver el menú.</h3>
+</div>
+
+  <div class="bottonb">
+    <button id="es" class="translate"><img class="btn" src="images/colombia.png"  alt="asia"></button>
+    <button id="en" class="translate" ><img class="btn" src="images/usa.jpg" style ="width:40px; height:21px"   alt="asia"></button>
+  </div>
+
+  <div class="carta">
+  <div class="cajon">
+
+<img src="images/fondo asia menú 2 pagina.png">
+
+<div class="texto-encima">
+  <h2 class="line1 line1-0 lang" key="pr00">Entradas</h2>
+       <div class="x"></div>
+       <article class="item1">
+         <p class="flavor lang" key="pr01">Egg Roll (Lumpia) cada Rollo  </p><p class="price">&nbsp&nbsp6.900</p>
+       </article>
+       <article class="item">
+         <p class="flavor lang"  key="pr02" >Costilla Asada</p><p class="price"> 42.000</p>
+       </article>
+       <article class="item">
+         <p class="flavor lang" key="pr03" >Wan Tum Frito  (Hojuelas)</p><p class="price"> 20.000</p>
+       </article>
+       <article class="item">
+         <p class="flavor lang" key="pr04" >Copa de Langostino </p><p class="price"> 57.000</p>
+       </article>
+       <article class="item">
+         <p class="flavor lang " key="pr05" >Copa de Camarones</p><p class="price"> 48.000</p>
+       </article>
+       <article class="item">
+         <p class="flavor lang" key="pr06">Combinación de la Casa</p><p class="price"> 49.000</p>
+       </article>
+          <article class="item" >
+         <p class="flavor lang" key="pr07" >Copa de Huevos de Codorniz</p><p class="price"> 19.000</p>
+       </article>
+
+       <h2 class="linei  lang" key="pr011">Sopas</h2>
+        <div class="xi"></div>
+       <article class="item1">
+         <p class="dessert lang" key="pr11">Hot and Sour</p><p class="price"> 17.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr12">Wan Tum</p><p class="price"> 17.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr13">Wan Tum Mien</p><p class="price"> 17.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr14">Yat ko Mien</p><p class="price"> 17.000</p>
+       </article>
+  
+      <h2 class="line lang" key="pr022">Cremas</h2>
+        <div class="x"></div>
+       <article class="item">
+         <p class="dessert lang" key="pr21">Crema de Langostino</p><p class="price"> 19.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr22">Crema de Camarones</p><p class="price"> 18.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr23">Crema de Pollo </p><p class="price"> 17.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr24">Crema de Pescado</p><p class="price"> 17.000</p>
+       </article>
+           <article class="item">
+         <p class="dessert lang" key="pr25">Crema de Champiñones </p><p class="price"> 15.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr26">Crema de Cebolla</p><p class="price"> 15.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr27">Crema de Brócoli</p><p class="price"> 15.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr28">Crema de Tomate</p><p class="price"> 15.000</p>
+       </article>
+</div>
+  </div>
+
+
+  <div class="cajon">
+
+    <img src="images/fondo asia menú 1 pagina.png">
+
+<div class="texto-encima">
+   <h2 class="line line1-8 line1-10  lang" key="pr033">Platos Especiales</h2>
+       <div class="x"></div>
+       <article class="item">
+         <p class="dessert lang" key="pr31">Pollo en Salsa de Naranja</p><p class="price"> 47.000</p>
+       </article>
+        <article class="item">
+         <p class="dessert lang" key="pr32">Pollo en Salsa de Piña</p><p class="price"> 47.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr33">Chaw Pat Chin</p><p class="price"> 48.000</p>
+       </article>
+          <article class="item3">
+  <p class="dessert fas fa-star">Langostino,&nbspRes,&nbspTofu,&nbspPollo,&nbspCamarone,&nbspCerdo,&nbspPescado y vegetales</p><p class="price"></p>
+  </article>
+       <article class="item">
+         <p class="dessert lang" key="pr34">Brócoli con Res</p><p class="price"> 47.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr35">Brócoli con Pollo</p><p class="price"> 47.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr36">Brócoli con Langostino</p><p class="price"> 60.000</p>
+       </article>
+        <article class="item">
+         <p class="dessert lang" key="pr37">Pollo en Ajonjolí en Salsa de Mariscos</p><p class="price"> 47.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr38">Mazorquitas con Pollo</p><p class="price"> 47.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr39">Mazorquitas con Res</p><p class="price"> 50.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr310">Langostinos Salteados</p><p class="price"> 58.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr311">Res con Jengibre en Salsa de Ostras</p><p class="price"> 48.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr312">Camarones con Papa Vapor al Ajillo</p><p class="price"> 50.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr313">Tocino con Jalapeños</p><p class="price"> 49.000</p>
+       </article>
+        <h2 class="lineiiiiiiii lang" key="pr044">Arroz Frito</h2>
+       <div class="xi"></div>
+       <article class="item">
+         <p class="dessert lang" key="pr41">Arroz con Pollo</p><p class="price"> 43.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr42">Arroz con Res</p><p class="price"> 46.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr43">Arroz con Langostino</p><p class="price"> 60.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr44">Arroz con Mariscos</p><p class="price"> 53.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr45">Arroz con Camarones</p><p class="price"> 50.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr46">Arroz ocho Sabores</p><p class="price"> 50.000</p>
+       </article>
+       <article class="item3">
+  <p class="dessert fas fa-star">Langostino,&nbspRes,&nbspCalamar,&nbspPollo,&nbspCamaron,&nbspCerdo,&nbspPescado y Jamon</p><p class="price"></p>
+  </article>
+       <article class="item">
+         <p class="dessert lang" key="pr47">Arroz  Especial</p><p class="price"> 41.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr48">Arroz  Especial Pequeño</p><p class="price"> 30.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr49">Arroz  Especial Pequeño + Camarón</p><p class="price"> 36.000</p>
+       </article>
+</div>
+  </div>
+
+
+  <div class="cajon">
+    <img src="images/fondo asia menú 3 pagina.png">
+
+    <div class="texto-encima">
+      <h2 class="line1 line1-1 lang" key="pr055">Salsa Agridulce</h2>
+      <div class="x"></div>
+      <article class="item1">
+        <p class="dessert lang" key="pr51">Pollo en Salsa Agridulce</p><p class="price"> 43.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr52">Costilla en Salsa Agridulce</p><p class="price"> 42.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr53">Langostinos en Salsa Agridulce</p><p class="price"> 60.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr54">Pescado en Salsa Agridulce</p><p class="price"> 43.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr55">Cerdo en Salsa Agridulce</p><p class="price"> 43.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr56">Cerdo en Salsa Agridulce Pequeño</p><p class="price"> 30.500</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr57">Pollo en Salsa Agridulce Pequeño</p><p class="price"> 30.500</p>
+      </article>
+ 
+ <h2 class="lineiiii lang" key="pr066">Salsa de Curry</h2>
+       <div class="xi"></div>
+      <article class="item1">
+        <p class="dessert lang" key="pr61">Pollo en Salsa de Curry </p><p class="price"> 44.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr62">Langostino Salsa de Curry</p><p class="price"> 60.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr63">Pescado en Salsa de Curry</p><p class="price"> 47.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr64">Camarones en Salsa de Curry</p><p class="price"> 50.000</p>
+      </article>
+
+  <h2 class="line lang" key="pr077">Salsa de Ostras</h2>
+       <div class="x"></div>
+      <article class="item1">
+        <p class="dessert lang" key="pr71">Pollo en Salsa de Ostras</p><p class="price"> 45.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr72">Cerdo en Salsa de Ostras</p><p class="price"> 45.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr73">Res en Salsa de Ostras</p><p class="price"> 47.000</p>
+      </article>
+      <article class="item">
+      <p class="dessert lang" key="pr74">Langostino en Salsa de Ostras</p><p class="price"> 60.000</p>
+      </article>
+      <article class="item">
+      <p class="dessert lang" key="pr75">Pescado en Salsa de Ostras</p><p class="price"> 47.000</p>
+      </article>
+       <article class="item">
+      <p class="dessert lang" key="pr76">Camarones en Salsa de Ostras</p><p class="price"> 50.000</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="cajon">
+  <img src="images/fondo asia menú 4 pagina.png">
+
+<div class="texto-encima">
+
+  <h2 class="line1 line1-3 line1-9 lang" key="pr088">Chop Suey</h2>
+        <div class="x"></div>
+      
+       <article class="item1">
+         <p class="dessert lang" key="pr81">Chop Suey con Pollo </p><p class="price"> 43.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr82">Chop Suey con Res</p><p class="price"> 46.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr83">Chop Suey con Langostino</p><p class="price"> 60.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr84">Chop Suey con Camarones</p><p class="price"> 50.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr85">Chop Suey con Mariscos</p><p class="price"> 53.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr86">Chop Suey Especial</p><p class="price"> 41.000</p>
+       </article>
+         <article class="item">
+         <p class="dessert lang" key="pr87">Chop Suey Especial Pequeño + Camarón</p><p class="price"> 30.000</p>
+       </article>
+        <article class="item">
+         <p class="dessert lang" key="pr88">Chop Suey Especial Pequeño</p><p class="price"> 36.000</p>
+       </article>
+   <h2 class="lineii lang" key="pr099">Chaw Mien</h2>
+       <div class="xi"></div>
+       <article class="item1">
+         <p class="dessert lang" key="pr91">Chaw Mien con Pollo </p><p class="price"> 43.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr92">Chaw Mien con Res</p><p class="price"> 46.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr93">Chaw Mien con Langostino</p><p class="price"> 60.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr94">Chaw Mien con Camarones</p><p class="price"> 50.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr95">Chaw Mien con Mariscos</p><p class="price"> 53.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr96">Chaw Mien Especial</p><p class="price"> 41.000</p>
+       </article>
+          <article class="item">
+         <p class="dessert lang" key="pr97">Chaw Mien Especial Pequeño + Camarón</p><p class="price"> 30.000</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr98">Chaw Mien Especial Pequeño</p><p class="price"> 36.000</p>
+       </article>
+</div>
+  </div>
+
+
+  <div class="cajon">
+
+    <img src="images/fondo asia menú 5 pagina.png">
+
+    <div class="texto-encima">
+      <h2 class="line1 line1-3 lang" key="pr0100">Plato Vegetariano</h2>
+      <div class="x"></div>
+      <article class="item1">
+      <p class="dessert lang" key="pr101">Lo Mien sin Carne</p><p class="price"> 34.000</p>
+      </article>
+      <article class="item">
+      <p class="dessert lang" key="pr102">Arroz Frito con Raíces Chinas y Huevo en Salsa de Soya</p><p class="price"> 34.000</p>
+      </article>
+      <article class="item">
+       <p class="dessert lang" key="pr103">Vegetales en Salsa de Soya</p><p class="price"> 34.000</p>
+      </article>
+      <article class="item">
+       <p class="dessert lang" key="pr104">Tao Fu en Salsa Agridulce</p><p class="price"> 34.000</p>
+      </article>
+ <h2 class="lineiiiiiiiii lang" key="pr0200">Mariscos</h2>
+       <div class="xi"></div>
+      <article class="item1">
+        <p class="dessert lang" key="pr201">Langostinos a la Mariposa</p><p class="price"> 60.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr202">Langostinos Plancha</p><p class="price"> 60.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr203">Langostino Ajillo</p><p class="price"> 60.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr204">Cazuela de Mariscos</p><p class="price"> 58.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr205">Pescado con Vegetales en Salsa de Soya</p><p class="price"> 47.000</p>
+      </article>
+       <article class="item">
+        <p class="dessert lang" key="pr206">Pescado a la Milanesa</p><p class="price"> 47.000</p>
+      </article>
+       <article class="item">
+        <p class="dessert lang" key="pr207">Pescado Plancha</p><p class="price"> 47.000</p>
+      </article>
+  <h2 class="line2 lang" key="pr0300">Lo Mien</h2>
+       <div class="x"></div>
+      <article class="item1">
+        <p class="dessert lang" key="pr301">Lo Mien con Res</p><p class="price"> 46.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr302">Lo Mien con Pollo</p><p class="price"> 44.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr303">Lo Mien con Langostino</p><p class="price"> 60.000</p>
+      </article>
+      <article class="item">
+        <p class="dessert lang" key="pr304">Lo Mien con Camarones</p><p class="price"> 50.000</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="cajon">
+
+<img src="images/fondo asia menú 6 pagina.png">
+
+<div class="texto-encima">
+  <h2 class="line1 line1-4 lang" key="pr0400">Plato Combinado</h2>
+  <div class="x"></div>
+ <article class="item1">
+   <p class="dessert lang" key="pr401">Chop Suey y Arroz Especial</p><p class="price"> 41.000</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr402">Chop Suey y Cerdo en Salsa Agridulce</p><p class="price"> 41.000</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr403">Arroz Especial y Cerdo en Salsa Agridulce</p><p class="price"> 42.000</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr404">Arroz Especial y Pollo en Salsa Agridulce</p><p class="price"> 42.000</p>
+ </article>
+<h2 class="lineiiiiii lang" key="pr0500">Plato Combinado Triple</h2>
+ <div class="xi"></div>
+ <article class="item1">
+   <p class="dessert lang" key="pr501">Arroz, Chop Suey, Cerdo Agridulce </p><p class="price"> 42.000</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="p502">Arroz, Chop Suey, Pollo Agridulce</p><p class="price"> 43.000</p>
+ </article>
+<h2 class="line lang" key="pr0600">Plato Combinado Pequeño</h2>
+ <div class="x"></div>
+ <article class="item1">
+   <p class="dessert lang" key="pr601">Chop Suey y Arroz Especial </p><p class="price"> 29.500</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr602">Chop Suey y Cerdo Agridulce</p><p class="price"> 29.500</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr603">Arroz Especial y Pollo Agridulce</p><p class="price"> 29.500</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr604">Arroz Especial y Cerdo Agridulce</p><p class="price"> 30.500</p>
+ </article>
+  <h2 class="linei lang" key="pr0700">ToFu</h2>
+  <div class="xi"></div>
+ <article class="item1">
+   <p class="dessert lang" key="pr701">ToFu con Pollo</p><p class="price"> 44.000</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr702">ToFu con Res</p><p class="price"> 46.000</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr703">ToFu con Langostino</p><p class="price"> 60.000</p>
+ </article>
+ <article class="item">
+   <p class="dessert lang" key="pr704">Mapo ToFu</p><p class="price"> 47.000</p>
+ </article>
+</div>
+  </div>
+
+  <div class="cajon">
+
+    <img src="images/fondo asia menú 7 pagina.png">
+
+    <div class="texto-encima">
+      <h2 class="line1 line1-5 lang" key="pr0800">Carnes</h2>
+      <div class="x"></div>
+     <article class="item1">
+       <p class="dessert lang" key="pr801">Pollo a la Milanesa</p><p class="price"> 47.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr802">Pollo Plancha</p><p class="price"> 47.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr803">Res con Pimentón</p><p class="price"> 48.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr804">Solomito con Vegetales en Salsa de Vino</p><p class="price"> 49.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr805">Solomito Asado</p><p class="price"> 49.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr806">Cerdo Asado</p><p class="price"> 48.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr807">Chuleta a la Milanesa</p><p class="price"> 48.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr808">Filet Mignon con Champiñones</p><p class="price"> 49.000</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr809">Porción Arroz Blanco</p><p class="price"> &nbsp&nbsp8.500</p>
+     </article>
+<h2 class="lineiiiii  lang" key="pr0900">Gaseosas</h2>
+      <div class="xi"></div>
+     <article class="item1 ">
+       <p class="dessert lang" key="pr901">Coca-cola</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr902">Coca-cola zero</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr903">Manzana</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr904">Naranjada</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr905">7up</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+          <article class="item">
+       <p class="dessert lang" key="pr906">Premio</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr907">Soda</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr908">Cuatro</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+     <article class="item">
+       <p class="dessert lang" key="pr909">Colombiana</p><p class="price">&nbsp&nbsp7.500</p>
+     </article>
+       <article class="item">
+       <p class="dessert lang" key="pr909">Té Hatsu</p><p class="price">&nbsp&nbsp11.500</p>
+        <article class="item3">
+<p class="dessert">Blanco, Verde, Rojo, Azul, Amarillo, Violeta</p><p class="price"></p>
+</article>
+     </article>
+    </div>
+  </div>
+
+
+  <div class="cajon">
+
+    <img src="images/fondo asia menú 8 pagina.png">
+
+    <div class="texto-encima">
+      <h2 class="line1 line1-3 lang" key="pr1011">Sodas</h2>
+        <div class="x"></div>
+       <article class="item1">
+         <p class="dessert lang" key="pr1012">Soda de Lichys</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1013">Soda de Sandia</p><p class="price"> 13.500</p>
+       </article>
+        <article class="item">
+  <p class="dessert lang" key="pr1014"> Soda de Maracuya </p><p class="price">$ 13.500</p>
+ </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1015">Soda Michelada</p><p class="price"> 13.500</p>
+       </article>
+      <h2 class="lineiiiiiiiii lang" key="pr1022">Sangrias</h2>
+        <div class="xi"></div>
+       <article class="item1">
+         <p class="dessert lang" key="pr1023">Copa de Sangria Tinto</p><p class="price"> 13.500</p>
+       </article>
+         <article class="item">
+         <p class="dessert lang" key="pr1024">Copa de Sangria Rosse</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1025">Copa de Sangria Blanc</p><p class="price"> 13.500</p>
+       </article>
+        <article class="item">
+         <p class="dessert lang" key="pr1026">Jarra de Sangria Tinto</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1027">Jarra de Sangria Rosse</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1028">Jarra de Sangria Blanc</p><p class="price"> 13.500</p>
+       </article>
+   <h2 class="line lang" key="pr1033">Jugos</h2>
+        <div class="x"></div>
+       <article class="item">
+         <p class="dessert lang" key="pr1034">Mango</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1035">Guanabana</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1036">Mora</p><p class="price"> 13.500</p>
+       </article>
+           <article class="item">
+         <p class="dessert lang" key="pr1037">Maracuya</p><p class="price"> 14.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1038">Limonada de Coco</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1039">Limonada</p><p class="price"> 14.500</p>
+       </article>
+          </div>
+    </div>
+  <div class="cajon">
+    <img src="images/fondo asia menú 9 pagina.png">
+
+    <div class="texto-encima">
+
+   <h2 class="line1  line1-3 lang" key="pr1044">Postres</h2>
+        <div class="x"></div>
+       <article class="item1">
+         <p class="dessert lang" key="pr1045">Flan con Coco</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1046">Flan de Caramelo</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1047">Cheese Cake</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1048">Nata</p><p class="price"> 13.500</p>
+       </article>
+        <article class="item">
+         <p class="dessert lang" key="pr1049">Te de China</p><p class="price"> 13.500</p>
+       </article>
+       <article class="item">
+         <p class="dessert lang" key="pr1050">Tapioca con Mango</p><p class="price"> 14.500</p>
+       </article>
+       
+       <article class="item">
+      <img class="img_postre" src="images/6.png" >
+    </article>
+<div class="contenedor-propina">
+  <p class="propina">
+    Advertencia propina: Por disposición de la Superintendencia de Industria y Comercio,
+    se informa que en este establecieminto la propina es sugerida al consumidor
+    y corresponde a un porcentaje de 10% sobre el valor total de la cuenta, el cual
+    podrá ser aceptado, rechazado o modificado por usted, de acuerdo con su valoración
+    del servicio prestado. Si no desea cancelar dicho valor haga caso omiso del mismo;
+    si desea cancelar un valor diferente indiquelo así para hacer el ajuste correspondiente.
+  </p>
+  </div>
+    </div>
+  </div>
+</div>
+  </section>
+  </main>
+
+<section>
+<div class="space_into_universe"></div>
+</section>
+<section class="about" id="about">
+  <div class="image">
+  <img src="images/2.png" alt="">
+  </div>
+  <div class="content">
+      <h3 class="title">Asia</h3>
+      <p class="asia_parrafo">Queremos invitarte al restaurante Asia para disfrutar de un espacio agradable donde, podras realizar eventos 
+        empresariales, celebrar cumpleaños y comer en familia.
+      </p>
+      <div class="icons-container">
+      <div class="icons">
+            <img src="images/develerymoto.png" alt="">
+            <h3>Domicilios</h3>
+         </div>
+         <div class="icons">
+            <img src="images/icono_copas.png" alt="">
+            <h3>Vinos</h3>
+         </div>
+         <div class="icons">
+            <img src="images/mesero_dorado.png" alt="">
+            <h3>Eventos</h3>
+         </div>
+      </div>
+   </div>
+</section>
+<section>
+  <div class="space_into_universe"></div>
+  </section>
+<section>
+<div class="space_into_universe"></div>
+</section>
+<section>
+<div class="space_into_universe"></div>
+</section>
+<section>
+<div class="space_into_universe"></div>
+</section>
+<section>
+  <div class="space_into_universe"></div>
+  </section>
+<section class="footer">
+  <div class="icons-container">
+     <div class="icons">
+        <i class="fas fa-clock"></i>
+        <h3>Horario</h3>
+        <p>Lunes a Sabado </p>
+        <p>11:00 am a 10:30 pm</p>
+        <p>&nbsp</p>
+        <p>Domingos y Festivos</p>
+        <p>11:00 am a 10:00 pm</p>
+        <p></p>
+     </div>
+     <div class="icons">
+        <i class="fas fa-phone"></i>
+        <h3>Teléfono</h3>
+        <p href="6046041005">Línea única 604-6041005</p>
+        <a class="logo_footer"><img src="images/Asia_logo-Recuperado.png" alt="asia" style="width:98px" class="logo_footer1" > </a>
+  </div>
+  <div class="icons">
+        <i class="fas fa-map"></i>
+        <h3>Dirección</h3>
+        <p>Calle 16 # 30 145 - Medellín.</p>
+        <p>&nbsp</p>
+        <p>&nbsp</p>
+<img src="images/BONSAI01.png" alt="asia" style="width:64px" >
+  </div>
+  </div>
+<div class="x1"></div>
+  <div class="share">
+  <a href="https://www.instagram.com/asia_restaurante" target="_blank" class="fab fa-instagram"></a>
+  <a></a>
+  <a></a>
+  <a href="https://wa.link/jtr7yo" target="_blank" class="fab fa-whatsapp" ></a>
+  </div>
+</section>
+<script src="js/script.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/principal.js"></script>
+</body>
+</html>
+
